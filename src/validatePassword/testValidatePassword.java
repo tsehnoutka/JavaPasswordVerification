@@ -48,5 +48,4 @@ class testValidatePassword {
 		assertEquals (Strength.weak,    myMainClass.validatePassword("123456"),                     "123456");                      // <8 only one type
 		assertEquals (Strength.weak,    myMainClass.validatePassword("gZAGel"),                     "gZAGel");                      // <8 only one type
 	}
-
 }

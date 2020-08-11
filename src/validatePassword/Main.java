@@ -1,3 +1,46 @@
+/*
+Password Strength
+
+Programming challenge description:
+Write a function that uses regular expressions to determine a password's strength.
+A valid password for this challenge is a UTF-8 encoded string consisting of a minimum of 6 and a maximum of 25 characters. The accepted range of characters is [U+0021, U+007A] in the Basic Latin Unicode block.
+Use the following rules to determine the password strength:
+1.    A strong password must have at least one lowercase letter [U+0061, U+007A], one uppercase letter [U+0041, U+005A], one digit [U+0030, U+0039], and one special character (all other characters from the valid range in the Basic Latin block). The length of a strong password must be at least 10 characters.
+2.    The rule for a password of medium strength is the same as for strong, except it will not contain special characters and its length must be greater or equal to 8 characters. A password with the special character but shorter than 10 characters has a medium strength. For example, iT*2spX*8 is of medium strength.
+3.    All other valid passwords are weak.
+All value ranges in the above description are inclusive.
+
+Input:
+A string containing a password. For example:
+Nufu&YM21S
+
+Output:
+Print out the password's strength: strong, medium, or weak.
+Print invalid if the password is not valid.
+
+Test 1
+Nufu&YM21S
+Expected OutputDownload Test 1 Input
+strong
+
+Test 2
+iT*2spX*8
+Expected OutputDownload Test 2 Input
+medium
+
+Test 3
+gZAGel
+Expected OutputDownload Test 3 Input
+weak
+
+Test 4
+2N# 9k
+Expected OutputDownload Test 4 Input
+invalid
+
+ */
+
+
 package validatePassword;
 
 import java.io.BufferedReader;
